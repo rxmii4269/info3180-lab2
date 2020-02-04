@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="profile">
+    <div class="first-half">
+        <img class="profile-photo shadow" src="{{url_for('static',filename='images/man.png')}}" alt="profile picture">
+        <h2 class="text-shadow">Romaine Murray</h2>
+        <p class="text-shadow">@rxmii</p>
+        <p class="text-shadow">Kingston, Jamaica</p>
+        <p class="text-shadow">{{date}}</p>
+    </div>
+    <div class="bio-container">
+        <p class="bio">I am a smart and talented young man who loves website design and development. Contact me if you'd
+            like to work together on a new project.</p>
+    </div>
+    <div class="data">
+        <div class="numbers">
+            <p>7</p>
+            <p>100</p>
+            <p>250</p>
+        </div>
+        <div class="profile-social">
+            <p>Posts</p>
+            <p>Following</p>
+            <p>Followers</p>
+        </div>
+
+    </div>
+    <div class="follow-container">
+        <button class="follow-btn" type="submit">Follow</button>
+
+    </div>
+</div>
+{% endblock%}
